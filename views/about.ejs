@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - <%= company.name %></title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <%- include('partials/header') %>
+    
+    <main>
+        <section class="about">
+            <div class="container">
+                <h1>About <%= company.name %></h1>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Our Story</h2>
+                        <p>Founded in <%= company.founded %>, <%= company.name %> has been at the forefront of technological innovation. We started with a simple mission: to deliver exceptional solutions that drive business growth.</p>
+                        
+                        <h2>Our Mission</h2>
+                        <p><%= company.tagline %></p>
+                        
+                        <h2>Our Values</h2>
+                        <ul class="values-list">
+                            <li>✓ <strong>Excellence:</strong> Commitment to highest standards</li>
+                            <li>✓ <strong>Innovation:</strong> Continuous improvement and creativity</li>
+                            <li>✓ <strong>Integrity:</strong> Honest and transparent business practices</li>
+                            <li>✓ <strong>Collaboration:</strong> Working together for success</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <h3>100+</h3>
+                            <p>Projects Delivered</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>50+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>4+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>24/7</h3>
+                            <p>Support Available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <%- include('partials/footer') %>
+    
+    <script src="/js/script.js"></script>
+</body>
+</html>

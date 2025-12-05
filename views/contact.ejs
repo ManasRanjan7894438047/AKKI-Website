@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - <%= company.name %></title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <%- include('partials/header') %>
+    
+    <main>
+        <section class="contact">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p class="section-subtitle">We'd love to hear from you</p>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <h3>📍 Address</h3>
+                            <p><%= company.address %></p>
+                        </div>
+                        <div class="info-card">
+                            <h3>📞 Phone</h3>
+                            <p><%= company.phone %></p>
+                        </div>
+                        <div class="info-card">
+                            <h3>✉️ Email</h3>
+                            <p><%= company.email %></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-wrapper">
+                        <% if (typeof success !== 'undefined' && success) { %>
+                            <div class="success-message">
+                                <p><%= message %></p>
+                            </div>
+                        <% } %>
+                        
+                        <form method="POST" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <%- include('partials/footer') %>
+    
+    <script src="/js/script.js"></script>
+</body>
+</html>

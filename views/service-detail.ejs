@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= service.name %> - <%= company.name %></title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <%- include('partials/header') %>
+    
+    <main>
+        <section class="service-detail">
+            <div class="container">
+                <a href="/services" class="back-link">← Back to Services</a>
+                
+                <div class="service-detail-content">
+                    <div class="service-icon-large"><%= service.icon %></div>
+                    <h1><%= service.name %></h1>
+                    <p class="service-description"><%= service.description %></p>
+                    
+                    <div class="service-benefits">
+                        <h2>Key Benefits</h2>
+                        <ul>
+                            <li>✓ Customized solutions for your business needs</li>
+                            <li>✓ Expert team with years of experience</li>
+                            <li>✓ Competitive pricing and transparent billing</li>
+                            <li>✓ Ongoing support and maintenance</li>
+                            <li>✓ Scalable solutions as your business grows</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-cta">
+                        <h2>Interested in this service?</h2>
+                        <p>Get in touch with our team to discuss how we can help your business</p>
+                        <a href="/contact" class="btn btn-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <%- include('partials/footer') %>
+    
+    <script src="/js/script.js"></script>
+</body>
+</html>

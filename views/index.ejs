@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - <%= company.name %></title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <%- include('partials/header') %>
+    
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1><%= company.name %></h1>
+                    <p><%= company.tagline %></p>
+                    <p class="hero-description"><%= company.description %></p>
+                    <a href="/services" class="btn btn-primary">Explore Our Services</a>
+                    <a href="/contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <h2>Why Choose <%= company.name %>?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🚀</div>
+                        <h3>Innovation</h3>
+                        <p>Cutting-edge technology and creative solutions</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">👥</div>
+                        <h3>Expert Team</h3>
+                        <p>Experienced professionals dedicated to your success</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Quality</h3>
+                        <p>High-quality deliverables and exceptional service</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AKKI App Showcase Section -->
+        <section class="app-showcase">
+            <div class="container">
+                <h2>Introducing AKKI Solutions App</h2>
+                <p class="section-subtitle">Experience the power of innovation in your pocket</p>
+                
+                <div class="app-showcase-content">
+                    <div class="app-info">
+                        <h3><%= company.app.name %></h3>
+                        <p class="app-description"><%= company.app.description %></p>
+                        
+                        <div class="app-stats">
+                            <div class="app-stat">
+                                <span class="rating">⭐ <%= company.app.rating %></span>
+                                <p><%= company.app.reviews %> Reviews</p>
+                            </div>
+                            <div class="app-stat">
+                                <span class="downloads">📥 <%= company.app.downloads %></span>
+                                <p>Downloads</p>
+                            </div>
+                            <div class="app-stat">
+                                <span class="age-rating">🔞 <%= company.app.ageRating %></span>
+                                <p>Age Rating</p>
+                            </div>
+                        </div>
+
+                        <div class="app-features">
+                            <h4>Key Features:</h4>
+                            <% const appFeatures = (company.app.coreFeatures || company.app.features || []); %>
+                            <% if (appFeatures.length === 0) { %>
+                                <p>No features available yet.</p>
+                            <% } else { %>
+                                <ul>
+                                    <% appFeatures.forEach(feature => { %>
+                                        <li>
+                                            <strong><%= feature.title %>:</strong>
+                                            <%= feature.description || feature.details || '' %>
+                                        </li>
+                                    <% }); %>
+                                </ul>
+                            <% } %>
+                        </div>
+
+                        <div class="app-cta">
+                            <a href="<%= company.app.downloadLinks.appStore %>" target="_blank" rel="noopener noreferrer" class="btn btn-primary">📱 Download on App Store</a>
+                            <a href="<%= company.app.downloadLinks.googlePlay %>" target="_blank" rel="noopener noreferrer" class="btn btn-secondary-outline">🤖 Download on Google Play</a>
+                        </div>
+                    </div>
+
+                    <div class="app-mockup">
+                        <div class="phone-mockup">
+                            <div class="phone-screen">
+                                <div class="mockup-content">
+                                    <div class="mockup-header">AKKI</div>
+                                    <div class="mockup-body">
+                                        <div class="mockup-card">🌟 Premium Features</div>
+                                        <div class="mockup-card">📱 Seamless Experience</div>
+                                        <div class="mockup-card">🔒 Secure & Private</div>
+                                        <div class="mockup-card">🚀 Real-time Updates</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <h2>Ready to Transform Your Business?</h2>
+                <p>Let's work together to achieve your goals</p>
+                <a href="/contact" class="btn btn-large">Contact Us Today</a>
+            </div>
+        </section>
+    </main>
+    
+    <%- include('partials/footer') %>
+    
+    <script src="/js/script.js"></script>
+</body>
+</html>

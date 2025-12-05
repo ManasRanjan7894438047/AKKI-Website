@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKKI App - <%= company.name %></title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <%- include('partials/header') %>
+    
+    <main>
+        <!-- App Hero Section -->
+        <section class="app-hero">
+            <div class="container">
+                    <div class="app-hero-content">
+                        <div class="app-hero-text">
+                            <span class="app-badge">⭐ <%= company.app.rating %> Stars • <%= company.app.reviews %> Reviews</span>
+                            <h1>AKKI Solutions App</h1>
+                            <p class="app-hero-subtitle"><%= company.app.tagline %></p>
+                            <p class="app-hero-description"><%= company.app.description %></p>
+                        
+                            <div class="app-download-buttons">
+                                <a href="<%= company.app.downloadLinks.appStore %>" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">📱 App Store</a>
+                                <a href="<%= company.app.downloadLinks.googlePlay %>" target="_blank" rel="noopener noreferrer" class="btn btn-secondary-outline btn-large">🤖 Google Play</a>
+                            </div>
+                        
+                            <div class="app-meta">
+                                <span>📥 <%= company.app.downloads %> Downloads</span>
+                                <span>📱 Available for all devices</span>
+                                <span>⚡ Age <%= company.app.ageRating %></span>
+                            </div>
+                        </div>
+                        <div class="app-hero-visual">
+                            <div class="app-preview-box">
+                                <div class="preview-phone">
+                                    <div class="phone-notch"></div>
+                                    <div class="phone-screen">
+                                        <h3>Welcome to AKKI</h3>
+                                        <p>Discover boundless experiences</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+            <!-- Core Features Section -->
+            <section class="app-core-features">
+            <div class="container">
+                    <div class="section-header">
+                        <h2>Powerful Features</h2>
+                        <p>Everything you need for an amazing experience</p>
+                    </div>
+                
+                    <div class="features-showcase-grid">
+                        <% company.app.coreFeatures.forEach((feature) => { %>
+                            <div class="feature-showcase-card">
+                                <div class="feature-icon"><%= feature.title.split(' ')[0] %></div>
+                                <h3><%= feature.title.substring(feature.title.indexOf(' ') + 1) %></h3>
+                                <p class="feature-desc"><%= feature.description %></p>
+                                <p class="feature-details"><%= feature.details %></p>
+                            </div>
+                    <% }); %>
+                </div>
+            </div>
+        </section>
+
+            <!-- Advantages Section -->
+            <section class="app-advantages">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Why Choose AKKI?</h2>
+                        <p>Industry-leading benefits that set us apart</p>
+                    </div>
+                
+                    <div class="advantages-grid">
+                        <% company.app.advantages.forEach((advantage) => { %>
+                            <div class="advantage-card">
+                                <div class="advantage-icon"><%= advantage.icon %></div>
+                                <h3><%= advantage.title %></h3>
+                                <p><%= advantage.description %></p>
+                            </div>
+                        <% }); %>
+                    </div>
+                </div>
+            </section>
+        <!-- App Stats Section -->
+        <section class="app-stats-section">
+            <div class="container">
+                <h2>Trusted by Thousands</h2>
+                
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <div class="stat-number">⭐ <%= company.app.rating %></div>
+                        <p>Star Rating</p>
+                        <small><%= company.app.reviews %> Reviews from verified users</small>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">📥 <%= company.app.downloads %></div>
+                        <p>Active Downloads</p>
+                        <small>And growing every day</small>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">🌍</div>
+                        <p>Global Reach</p>
+                        <small>Available in multiple countries</small>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">✅</div>
+                        <p>99.9% Uptime</p>
+                        <small>Reliable and always available</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Screenshots Section -->
+        <section class="app-screenshots">
+            <div class="container">
+                <h2>App Screenshots</h2>
+                <p class="section-subtitle">Experience the beautiful interface</p>
+                
+                <div class="screenshots-grid">
+                    <div class="screenshot-card">
+                        <div class="phone-frame">
+                            <div class="phone-notch"></div>
+                            <div class="phone-content">
+                                <h4>Home Screen</h4>
+                                <p>Explore amazing experiences</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screenshot-card">
+                        <div class="phone-frame">
+                            <div class="phone-notch"></div>
+                            <div class="phone-content">
+                                <h4>Gallery</h4>
+                                <p>View beautiful moments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screenshot-card">
+                        <div class="phone-frame">
+                            <div class="phone-notch"></div>
+                            <div class="phone-content">
+                                <h4>Profile</h4>
+                                <p>Manage your account</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screenshot-card">
+                        <div class="phone-frame">
+                            <div class="phone-notch"></div>
+                            <div class="phone-content">
+                                <h4>Settings</h4>
+                                <p>Customize your preferences</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- App Requirements Section -->
+        <section class="app-requirements">
+            <div class="container">
+                <h2>System Requirements</h2>
+                
+                <div class="requirements-grid">
+                    <div class="requirement-card">
+                        <h3>iOS</h3>
+                        <ul>
+                            <li>iOS 12.0 or later</li>
+                            <li>Compatible with iPhone, iPad</li>
+                            <li>100 MB storage space</li>
+                            <li>Internet connection required</li>
+                        </ul>
+                    </div>
+                    <div class="requirement-card">
+                        <h3>Android</h3>
+                        <ul>
+                            <li>Android 6.0 or later</li>
+                            <li>Compatible with all Android devices</li>
+                            <li>120 MB storage space</li>
+                            <li>Internet connection required</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="app-cta-final">
+            <div class="container">
+                <h2>Get the AKKI App Today</h2>
+                <p>Join thousands of happy users experiencing the best of what AKKI has to offer</p>
+                
+                <div class="final-download-buttons">
+                    <a href="<%= company.app.downloadLinks.appStore %>" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">📱 Download on App Store</a>
+                    <a href="<%= company.app.downloadLinks.googlePlay %>" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">🤖 Download on Google Play</a>
+                    <a href="/contact" class="btn btn-secondary btn-large">Contact Support</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <%- include('partials/footer') %>
+    
+    <script src="/js/script.js"></script>
+</body>
+</html>

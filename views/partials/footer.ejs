@@ -1,0 +1,38 @@
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><%= company.name %></h3>
+                <p><%= company.tagline %></p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/app">App</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: <%= company.email %></p>
+                <p>Phone: <%= company.phone %></p>
+                <p><%= company.address %></p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="<%= company.social.facebook %>">Facebook</a>
+                    <a href="<%= company.social.twitter %>">Twitter</a>
+                    <a href="<%= company.social.linkedin %>">LinkedIn</a>
+                    <a href="<%= company.social.instagram %>">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 <%= company.name %>. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
