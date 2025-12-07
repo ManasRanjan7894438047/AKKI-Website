@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a5a3a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1a3a2a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a1a1a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#grad4)"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="100" cy="200" r="90" fill="rgba(198, 168, 255, 0.15)"/>
+  <circle cx="1100" cy="100" r="110" fill="rgba(107, 45, 125, 0.2)"/>
+  
+  <!-- Hexagon pattern -->
+  <polygon points="300,80 350,50 400,80 400,140 350,170 300,140" fill="none" stroke="rgba(159, 123, 203, 0.3)" stroke-width="2"/>
+  <polygon points="850,250 900,220 950,250 950,310 900,340 850,310" fill="none" stroke="rgba(159, 123, 203, 0.3)" stroke-width="2"/>
+  
+  <!-- Main content -->
+  <text x="600" y="100" font-size="48" font-weight="bold" fill="#C6A8FF" text-anchor="middle" font-family="Arial, sans-serif">
+    🎯 Our Mission
+  </text>
+  <text x="600" y="170" font-size="26" fill="white" text-anchor="middle" font-family="Arial, sans-serif">
+    Empowering Businesses with Digital Excellence
+  </text>
+  <text x="600" y="240" font-size="14" fill="rgba(255,255,255,0.75)" text-anchor="middle" font-family="Arial, sans-serif">
+    We create innovative solutions that drive growth and transform digital experiences
+  </text>
+  
+  <!-- CTA Button -->
+  <rect x="400" y="300" width="400" height="55" rx="10" fill="rgba(198, 168, 255, 0.9)" stroke="#C6A8FF" stroke-width="2"/>
+  <text x="600" y="335" font-size="18" font-weight="bold" fill="#0a1a1a" text-anchor="middle" font-family="Arial, sans-serif">
+    Get in Touch with Our Team
+  </text>
+</svg>

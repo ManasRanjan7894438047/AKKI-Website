@@ -50,17 +50,20 @@
             <section class="app-core-features">
             <div class="container">
                     <div class="section-header">
-                        <h2>Powerful Features</h2>
-                        <p>Everything you need for an amazing experience</p>
+                        <h2>🚀 Powerful Features</h2>
+                        <p>Everything you need to create, share, and connect with ease</p>
                     </div>
                 
-                    <div class="features-showcase-grid">
-                        <% company.app.coreFeatures.forEach((feature) => { %>
-                            <div class="feature-showcase-card">
-                                <div class="feature-icon"><%= feature.title.split(' ')[0] %></div>
-                                <h3><%= feature.title.substring(feature.title.indexOf(' ') + 1) %></h3>
-                                <p class="feature-desc"><%= feature.description %></p>
+                    <div class="features-grid-enhanced">
+                        <% company.app.coreFeatures.forEach((feature, index) => { %>
+                            <div class="feature-card-enhanced" style="animation-delay: <%= index * 0.1 %>s;">
+                                <div class="feature-card-header">
+                                    <div class="feature-emoji"><%= feature.title.split(' ')[0] %></div>
+                                    <h3><%= feature.title.substring(feature.title.indexOf(' ') + 1) %></h3>
+                                </div>
+                                <p class="feature-description"><%= feature.description %></p>
                                 <p class="feature-details"><%= feature.details %></p>
+                                <div class="feature-badge">Feature</div>
                             </div>
                     <% }); %>
                 </div>

@@ -10,15 +10,75 @@
     <%- include('partials/header') %>
     
     <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h1><%= company.name %></h1>
-                    <p><%= company.tagline %></p>
-                    <p class="hero-description"><%= company.description %></p>
-                    <a href="/services" class="btn btn-primary">Explore Our Services</a>
-                    <a href="/contact" class="btn btn-secondary">Get in Touch</a>
+        <!-- Banner Carousel Section -->
+        <section class="banner-carousel">
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <!-- Slide 1: Global Securities Trading -->
+                    <div class="carousel-slide active">
+                        <div class="slide-overlay"></div>
+                        <div class="glass-content">
+                            <div class="glass-card">
+                                <div class="card-icon">📈</div>
+                                <h4>Global Securities</h4>
+                                <p>Expert Trading Algorithms & Solutions</p>
+                                <div class="card-meta">
+                                    <span class="meta-tag">Trading</span>
+                                    <span class="meta-tag">Algorithms</span>
+                                </div>
+                                <a href="/services" class="glass-btn">Explore</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 2: Financial Freedom Platform -->
+                    <div class="carousel-slide">
+                        <div class="slide-overlay"></div>
+                        <div class="glass-content">
+                            <div class="glass-card">
+                                <div class="card-icon">💰</div>
+                                <h4>Financial Freedom</h4>
+                                <p>Your Safest Path to Financial Success</p>
+                                <div class="card-meta">
+                                    <span class="meta-tag">Innovation</span>
+                                    <span class="meta-tag">Security</span>
+                                </div>
+                                <a href="/about" class="glass-btn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 3: Engineering Excellence -->
+                    <div class="carousel-slide">
+                        <div class="slide-overlay"></div>
+                        <div class="glass-content">
+                            <div class="glass-card">
+                                <div class="card-icon">⚙️</div>
+                                <h4>Engineering Excellence</h4>
+                                <p>Expert Team Building Tomorrow's Solutions</p>
+                                <div class="card-meta">
+                                    <span class="meta-tag">Technology</span>
+                                    <span class="meta-tag">Innovation</span>
+                                </div>
+                                <a href="/contact" class="glass-btn">Join Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation Controls -->
+                <button class="carousel-control prev" onclick="moveCarousel(-1)">
+                    <span>❮</span>
+                </button>
+                <button class="carousel-control next" onclick="moveCarousel(1)">
+                    <span>❯</span>
+                </button>
+                
+                <!-- Indicators -->
+                <div class="carousel-indicators">
+                    <span class="indicator active" onclick="goToSlide(0)"></span>
+                    <span class="indicator" onclick="goToSlide(1)"></span>
+                    <span class="indicator" onclick="goToSlide(2)"></span>
                 </div>
             </div>
         </section>

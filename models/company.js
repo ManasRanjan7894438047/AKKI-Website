@@ -3,14 +3,14 @@ const companyData = {
   name: 'AKKI',
   tagline: 'Building Tomorrow\'s Solutions Today',
   description: 'Leading technology company delivering innovative solutions',
-  founded: 2020,
+  founded: 2019,
   email: 'dev@akki.co.in',
   phone: '+91 8249820167',
   address: 'Bengaluru,Karnataka,India',
   social: {
     facebook: '#',
     twitter: '#',
-    linkedin: '#',
+    linkedin: 'https://www.linkedin.com/company/akki-solutions-opc-pvt-ltd/',
     instagram: '#'
   },
   app: {
@@ -28,75 +28,99 @@ const companyData = {
     coreFeatures: [
       {
         id: 1,
-        title: '🎨 Beautiful Gallery',
-        description: 'Capture and showcase stunning experiences with our intuitive gallery interface',
-        details: 'High-resolution image support, cloud storage integration, and smart organization'
+        title: '✏️ Create Experiences - Manual & AI',
+        description: 'Create beautiful experiences manually or let AI assist you',
+        details: 'Compose stories with text, images, and multimedia with intelligent AI suggestions and auto-enhancement'
       },
       {
         id: 2,
-        title: '🔔 Real-time Notifications',
-        description: 'Stay updated with instant alerts and push notifications',
-        details: 'Customizable notifications, activity feeds, and priority alerts'
+        title: '😂 Create Funny Images',
+        description: 'Generate hilarious memes and funny images instantly',
+        details: 'AI-powered image editor, meme templates, text overlays, filters, and instant sharing options'
       },
       {
         id: 3,
-        title: '✨ Seamless Experience',
-        description: 'Intuitive UI/UX design for effortless navigation',
-        details: 'Fast-loading screens, smooth animations, and user-friendly interface'
+        title: '📖 Create Stories',
+        description: 'Craft engaging stories with ease and creativity',
+        details: 'Story templates, text effects, animations, transitions, and professional-grade editing tools'
       },
       {
         id: 4,
-        title: '📱 Cross-Platform Sync',
-        description: 'Work seamlessly across iOS and Android devices',
-        details: 'Cloud sync, data backup, and unified experience across platforms'
+        title: '🎬 Create Videos from Photos',
+        description: 'Transform your photos into stunning videos effortlessly',
+        details: 'Photo-to-video conversion, music sync, effects library, transitions, and export options'
       },
       {
         id: 5,
-        title: '🔒 Enterprise Security',
-        description: 'Bank-level security for your data and privacy',
-        details: 'End-to-end encryption, two-factor authentication, and regular security audits'
+        title: '🎨 Beautiful Gallery',
+        description: 'Organize and showcase all your creations beautifully',
+        details: 'High-resolution support, smart albums, cloud storage, and quick search functionality'
       },
       {
         id: 6,
-        title: '👥 Social Integration',
-        description: 'Connect and share with your community',
-        details: 'Share experiences, follow friends, and build your network'
+        title: '🎬 Video Editor',
+        description: 'Professional-grade video editing at your fingertips',
+        details: 'Trim, cut, merge clips, add effects, color grading, and audio mixing capabilities'
       },
       {
         id: 7,
-        title: '🌐 Offline Mode',
-        description: 'Access content even without internet connection',
-        details: 'Automatic sync when online, cached content, and offline browsing'
+        title: '🎵 Audio & Music Integration',
+        description: 'Add royalty-free music and sound effects to your creations',
+        details: 'Extensive music library, audio trimming, mixing, and synchronization tools'
       },
       {
         id: 8,
-        title: '⚙️ Customization',
-        description: 'Personalize your app experience',
-        details: 'Theme options, layout preferences, and notification settings'
+        title: '✨ AI-Powered Filters & Effects',
+        description: 'Transform your content with advanced AI effects',
+        details: 'Real-time filters, background removal, face enhancement, and smart suggestions'
       },
       {
         id: 9,
-        title: '🚀 Performance',
-        description: 'Lightning-fast app performance and minimal battery usage',
-        details: 'Optimized code, efficient caching, and background processes'
+        title: '👥 Social Sharing',
+        description: 'Share your creations instantly across all platforms',
+        details: 'One-click sharing to Instagram, TikTok, Facebook, WhatsApp, and more'
       },
       {
         id: 10,
-        title: '💬 In-App Chat',
-        description: 'Direct messaging and instant communication',
-        details: 'Group chats, multimedia messages, and conversation history'
+        title: '💬 In-App Chat & Comments',
+        description: 'Connect with friends through messaging and engagement',
+        details: 'Direct messaging, group chats, comments, likes, and real-time notifications'
       },
       {
         id: 11,
-        title: '📊 Analytics Dashboard',
-        description: 'Track your activity and insights',
-        details: 'Usage statistics, performance metrics, and personalized recommendations'
+        title: '📱 Cross-Platform Sync',
+        description: 'Seamlessly work across all your devices',
+        details: 'Cloud sync, automatic backup, continue editing anywhere, unified experience'
       },
       {
         id: 12,
-        title: '🎯 Smart Search',
-        description: 'Find what you need instantly',
-        details: 'Advanced filters, voice search, and intelligent suggestions'
+        title: '🌟 Premium Effects & Templates',
+        description: 'Access exclusive filters, effects, and creative templates',
+        details: 'Constantly updated library, trending effects, professional templates, and more'
+      },
+      {
+        id: 13,
+        title: '🔒 Privacy & Security',
+        description: 'Your content and data are always protected',
+        details: 'End-to-end encryption, two-factor authentication, privacy controls, and secure cloud backup'
+      },
+      {
+        id: 14,
+        title: '⚡ Fast Performance',
+        description: 'Lightning-quick rendering and minimal battery usage',
+        details: 'Optimized processing, smooth playback, efficient caching, and background operations'
+      },
+      {
+        id: 15,
+        title: '🎯 Smart Recommendations',
+        description: 'Discover trending content and personalized suggestions',
+        details: 'AI-curated feeds, trending creators, personalized discovery, and content analytics'
+      },
+      {
+        id: 16,
+        title: '🌐 Offline Mode',
+        description: 'Create and edit even without internet connection',
+        details: 'Offline editing, automatic sync when online, cached templates, and draft saving'
       }
     ],
     advantages: [

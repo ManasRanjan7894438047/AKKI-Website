@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A1F5A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6B2D7D;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0.1);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(255,255,255,0);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#grad1)"/>
+  
+  <!-- Overlay -->
+  <rect width="1200" height="400" fill="url(#grad2)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="200" cy="80" r="120" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="1000" cy="300" r="150" fill="rgba(255,255,255,0.05)"/>
+  
+  <!-- Main content -->
+  <text x="600" y="150" font-size="52" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial, sans-serif">
+    AKKI Solutions
+  </text>
+  <text x="600" y="220" font-size="28" fill="rgba(255,255,255,0.9)" text-anchor="middle" font-family="Arial, sans-serif">
+    Building Tomorrow's Solutions Today
+  </text>
+  <text x="600" y="270" font-size="16" fill="rgba(255,255,255,0.7)" text-anchor="middle" font-family="Arial, sans-serif">
+    Innovative Technology • Expert Team • Quality Assured
+  </text>
+  
+  <!-- Button -->
+  <rect x="450" y="300" width="300" height="50" rx="8" fill="rgba(255,255,255,0.2)" stroke="white" stroke-width="2"/>
+  <text x="600" y="333" font-size="18" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial, sans-serif">
+    Explore Our Services
+  </text>
+</svg>
