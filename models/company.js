@@ -58,15 +58,15 @@ const companyData = {
       },
       {
         id: 6,
-        title: '🎬 Video Editor',
-        description: 'Professional-grade video editing at your fingertips',
-        details: 'Trim, cut, merge clips, add effects, color grading, and audio mixing capabilities'
+        title: '🗺️ Smart Trip Planner',
+        description: 'Plan end-to-end journeys in one place',
+        details: 'Create day-wise itineraries, add stops and activities, and get optimized routes with real-time travel times'
       },
       {
         id: 7,
-        title: '🎵 Audio & Music Integration',
-        description: 'Add royalty-free music and sound effects to your creations',
-        details: 'Extensive music library, audio trimming, mixing, and synchronization tools'
+        title: '📡 Live Travel Updates',
+        description: 'Stay informed every moment of your trip',
+        details: 'Receive alerts for delays, route changes, weather, and nearby points of interest so you can adjust plans instantly'
       },
       {
         id: 8,
@@ -116,12 +116,12 @@ const companyData = {
         description: 'Discover trending content and personalized suggestions',
         details: 'AI-curated feeds, trending creators, personalized discovery, and content analytics'
       },
-      {
-        id: 16,
-        title: '🌐 Offline Mode',
-        description: 'Create and edit even without internet connection',
-        details: 'Offline editing, automatic sync when online, cached templates, and draft saving'
-      }
+      // {
+      //   id: 16,
+      //   title: '🌐 Offline Mode',
+      //   description: 'Create and edit even without internet connection',
+      //   details: 'Offline editing, automatic sync when online, cached templates, and draft saving'
+      // }
     ],
     advantages: [
       {

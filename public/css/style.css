@@ -2024,6 +2024,18 @@ body {
         }
     }@@
 
+    .carousel-slide {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Background only for Tech + Innovation slide */
+.carousel-slide.tech-slide {
+    background-image: url("/images/tech-innovationSVG.svg");
+}
+
     
 
     
